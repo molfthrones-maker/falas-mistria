@@ -1,55 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Falas Mistria</title>
-  <link rel="stylesheet" href="assets/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Falas Mistria</title>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header>
-    <h1>Falas <span>Mistria</span></h1>
-    <div class="search"><input id="q" placeholder="Buscar nesta lista"></div>
-    <div class="tools">
-      <span id="count">0 alteradas</span>
-      <button type="button" id="btnSalvar" class="primary">Salvar no GitHub</button>
-      <button type="button" id="btnCompilar">Compilar no GitHub</button>
-      <button type="button" id="btnToken">Token</button>
-    </div>
-  </header>
-  <aside>
-    <div class="search" style="padding:8px 12px">
-      <input id="navFilter" placeholder="Personagem ou bloco">
-    </div>
-    <nav id="nav"></nav>
-  </aside>
-  <main>
-    <p class="hint" id="boot">Carregando falas…</p>
-    <p class="hint">Campo de cima = original. Campo de texto = sua fala. <strong>Salvar</strong> e <strong>Compilar</strong> gravam no GitHub.</p>
-    <div class="toolbar">
-      <strong id="title">—</strong>
-      <span class="meta" id="meta"></span>
-      <div class="pager">
-        <button type="button" id="prev">←</button>
-        <span id="pageinfo"></span>
-        <button type="button" id="next">→</button>
-      </div>
-    </div>
-    <div id="list"><p class="empty">Carregando…</p></div>
-  </main>
-  <div id="modal" class="modal hidden">
-    <div class="modal-card">
-      <h2 id="modalTitle"></h2>
-      <p id="modalBody"></p>
-      <div id="tokenBox" class="hidden" style="margin-top:12px">
-        <input id="tokenInput" type="password" placeholder="ghp_ token repo" style="width:100%;padding:8px">
-      </div>
-      <div class="modal-actions">
-        <button type="button" id="modalOk" class="primary">Ok</button>
-      </div>
+<header>
+  <h1>Falas <span>Mistria</span></h1>
+  <div class="search"><input id="q" placeholder="Buscar nesta lista"></div>
+  <div class="tools">
+    <span id="count">0 alteradas</span>
+    <button type="button" id="btnSalvar" class="primary">Salvar no GitHub</button>
+    <button type="button" id="btnCompilar">Compilar no GitHub</button>
+    <button type="button" id="btnToken">Token</button>
+  </div>
+</header>
+<aside>
+  <div class="search" style="padding:8px 12px"><input id="navFilter" placeholder="Personagem ou bloco"></div>
+  <nav id="nav"></nav>
+</aside>
+<main>
+  <p class="hint" id="boot"></p>
+  <p class="hint">Esquerda: personagem. Cima: original. Campo de texto: sua fala.</p>
+  <div class="toolbar">
+    <strong id="title">—</strong>
+    <span class="meta" id="meta"></span>
+    <div class="pager">
+      <button type="button" id="prev">←</button>
+      <span id="pageinfo"></span>
+      <button type="button" id="next">→</button>
     </div>
   </div>
-  <footer>molfthrones-maker/falas-mistria</footer>
-  <script src="assets/app.js"></script>
-</body>
-</html>
+  <div id="list"></div>
+</main>
+<div id="modal" class="modal hidden"><div class="modal-card"><h2 id="modalTitle"></h2><p id="modalBody"></p><div id="tokenBox" class="hidden" style="margin-top:12px"><input id="tokenInput" type="password" style="width:100%;padding:8px"></div><div class="modal-actions"><button type="button" id="modalOk" class="primary">Ok</button></div></div></div>
+<footer>falas-mistria</footer>
+<script src="assets/manifest.js"></script>
+<script src="assets/app.js"></script>
+</body></html>
