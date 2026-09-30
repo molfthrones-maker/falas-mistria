@@ -9,7 +9,7 @@
 <body>
 <header>
   <h1>Falas <span>Mistria</span></h1>
-  <div class="search"><input id="q" placeholder="Buscar nesta lista"></div>
+  <div class="search"><input id="q" placeholder="Buscar nesta conversa"></div>
   <div class="tools">
     <span id="count">0 alteradas</span>
     <button type="button" id="btnSalvar" class="primary">Salvar no GitHub</button>
@@ -18,21 +18,20 @@
   </div>
 </header>
 <aside>
-  <div class="search" style="padding:8px 12px"><input id="navFilter" placeholder="Personagem ou bloco"></div>
+  <div class="search" style="padding:8px 12px"><input id="navFilter" placeholder="Personagem"></div>
   <nav id="nav"></nav>
 </aside>
 <main>
   <p class="hint" id="boot"></p>
-  <p class="hint">Esquerda: personagem. Cima: original. Campo de texto: sua fala.</p>
+  <p class="hint">Personagem → estação → contexto. Cada bloco é uma conversa, com as suas respostas logo abaixo da fala.</p>
   <div class="toolbar">
     <strong id="title">—</strong>
     <span class="meta" id="meta"></span>
-    <div class="pager">
-      <button type="button" id="prev">←</button>
-      <span id="pageinfo"></span>
-      <button type="button" id="next">→</button>
-    </div>
   </div>
+  <div class="label">Estação</div>
+  <div id="seasons" class="chips"></div>
+  <div class="label">Contexto</div>
+  <div id="contexts" class="chips"></div>
   <div id="list"></div>
 </main>
 <div id="modal" class="modal hidden"><div class="modal-card"><h2 id="modalTitle"></h2><p id="modalBody"></p><div id="tokenBox" class="hidden" style="margin-top:12px"><input id="tokenInput" type="password" style="width:100%;padding:8px"></div><div class="modal-actions"><button type="button" id="modalOk" class="primary">Ok</button></div></div></div>
